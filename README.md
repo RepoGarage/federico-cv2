@@ -30,10 +30,14 @@ Residual Network (ResNet) dikembangkan oleh Microsoft Research dan memenangkan I
 
 ## Ranking Performa Berdasarkan Analisis
 
-VGG-like – Validasi paling tinggi, cepat konvergen, stabil
-GoogLeNet – Stabil tapi akurasi rendah
-ResNet ringan – Cocok uji coba cepat, performa masih bisa ditingkatkan
-AlexNet-like – Berat untuk dataset kecil, akurasi rendah
+- **VGG Tipe 1 (93.75%)** – Validasi paling tinggi, cepat konvergen, stabil
+- **GoogleNet Tipe 2 (93.10%)** – Akurasi tinggi, setara VGG, tapi butuh tuning careful
+- **VGG Tipe 2 (92.95%)** – Akurasi tinggi, tapi overfitting lebih besar dari Tipe 1
+- **ResNet Tipe 2 (84.75%)** – Terbaik untuk dataset kecil (1.6K), fine-tuning sukses
+- **AlexNet Tipe 1 (67.75%)** – Moderate, berat untuk dataset kecil, perlu improvement
+- **AlexNet Tipe 2 (60.25%)** – Gagal, overfitting parah, hyperparameter salah
+- **GoogleNet Tipe 1 (58.75%)** – Gagal total, underfitting, LR salah
+- **ResNet Tipe 1 (58.25%)** – Gagal total, transfer learning tanpa fine-tuning tidak cukup
 
 ## Struktur Repository
 
